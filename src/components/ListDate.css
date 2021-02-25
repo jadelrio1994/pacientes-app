@@ -1,0 +1,20 @@
+.list__card {
+  background: white;
+  padding: 0 13px;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px solid grey;
+}
+/* .list__line {
+
+} */
+.list__eliminar {
+  width: 100%;
+  margin: 0 0 13px;
+  background-color: tomato;
+  border-radius: 5px;
+  padding: 5px;
+  color: wheat;
+  font-size: larger;
+  font-weight: bold;
+}
