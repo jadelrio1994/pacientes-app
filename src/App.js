@@ -5,15 +5,16 @@ import "./App.css";
 import { ListDate } from "./components/ListDate";
 
 function App() {
-  const initialState = JSON.parse(localStorage.getItem("citas"));
+  // const initialState = JSON.parse(localStorage.getItem("citas"));
+  
 
-  const [citas, setCitas] = useState(initialState);
+  const [citas, setCitas] = useState([]);
 
-  useEffect(() => {
-    JSON.parse(localStorage.getItem("citas"))
-      ? localStorage.setItem("citas", JSON.stringify(citas))
-      : localStorage.setItem("citas", JSON.stringify([]));
-  }, [citas]);
+  // useEffect(() => {
+  //   JSON.parse(localStorage.getItem("citas"))
+  //     ? localStorage.setItem("citas", JSON.stringify(citas))
+  //     : localStorage.setItem("citas", JSON.stringify([]));
+  // }, [citas]);
 
   const handleDelete = (id) => {
     setCitas(citas.filter(cita => cita.id !== id))
